@@ -1,0 +1,22 @@
+{
+  "zip_original": "logos-times-football-logos.zip",
+  "bytes": 288451578,
+  "sha256": "35f1b56ed6842a1d34cbd8a6fcd9d8fb9662694230fda10b663cea641da31910",
+  "partes": [
+    {
+      "arquivo": "logos-times-football-logos.zip.001",
+      "bytes": 99614720,
+      "sha256": "193eac707c84abf6ee6d4b426fb2f8c4ec8f25bacb8f850569363fe6a14cf08f"
+    },
+    {
+      "arquivo": "logos-times-football-logos.zip.002",
+      "bytes": 99614720,
+      "sha256": "a9f4a7a86f33f03141ade2cc08586bed3b630d1e3e97b1779e4dec750977d351"
+    },
+    {
+      "arquivo": "logos-times-football-logos.zip.003",
+      "bytes": 89222138,
+      "sha256": "59c4d2cacdba985ac7c025ae2a532f9803b88ab421fafd1c47c849b4b48e8a3e"
+    }
+  ]
+}
