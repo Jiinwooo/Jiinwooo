@@ -63,7 +63,11 @@ Se foi escrito/desenhado por nós do zero, é Trilho B (publicável).
 - Fórmulas de blend modes e ajustes (Multiply, Screen, Overlay, Curves…) são **domínio
   público** (matemática), não copyrightáveis.
 
-## 5. Stack do projeto público (a decidir na fase final)
+## 5. Stack do projeto público
+
+> **Decidido em `telar/docs/adr/0001-stack.md`:** Kotlin + Jetpack Compose (UI), motor C++20
+> via NDK, OpenGL ES 3.0 (+3.1 compute), arm64-v8a principal. As opções avaliadas seguem
+> abaixo como registro.
 
 Como é clean-room e 64-bit nativo, **não** ressuscitamos o Adobe AIR. Opções de stack,
 todas ARM64-nativas:
@@ -103,9 +107,9 @@ telar/                      (nome a confirmar)
 ## 8. Estado atual / pendências para a fase de publicação
 
 - [ ] Confirmar **nome**.
-- [ ] Escolher **stack** do Trilho B.
-- [ ] Criar os **assets originais** (ícones/tema) — nada da Adobe.
-- [ ] Reescrever os filtros como **shaders GLES3 novos**.
+- [x] Escolher **stack** do Trilho B (ADR 0001).
+- [~] Criar os **assets originais** (ícones/tema): tema e protótipo em `design/`, ícones de traço próprios.
+- [~] Reescrever os filtros como **shaders GLES3 novos**: composição com 27 modos pronta e testada (`telar/filters/`).
 - [ ] Só então: criar repositório público + README/LICENSE/ROADMAP + releases para download.
 
 > Até lá, seguimos no Trilho A (estudo/port privado) e **preparando** peças originais do
