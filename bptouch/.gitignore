@@ -1,0 +1,11 @@
+.gradle/
+build/
+app/build/
+app/.cxx/
+local.properties
+*.keystore
+!debug-shared.keystore
+engine-tests/test_selection
+engine-tests/test_engine
+engine-tests/out/
+engine-tests/*.pgm
