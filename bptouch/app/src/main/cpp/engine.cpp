@@ -206,8 +206,17 @@ bool Engine::initGL() {
 
 void Engine::releaseGL() {
     // o contexto morreu: os nomes GL são inválidos, só esquecemos
+    // nenhum nome antigo pode ser apagado depois: o novo contexto reutiliza os mesmos números
+    if (segThread_.joinable()) segThread_.join();
+    segBusy_ = false; segDone_ = false;
     layers_.clear(); W_ = H_ = 0; active_ = -1;
+    compA_ = compB_ = compOut_ = preview_ = strokeTex_ = tmp_ = tmp2_ = region_ = selTex_ = 0;
+    vao_ = dabVbo_ = fbo_ = curveTex_ = white1_ = clear1_ = 0;
     pBlend_ = pCopy_ = pThumb_ = pDab_ = pStroke_ = pMove_ = pFill_ = pBlur_ = pAdjust_ = pDisplay_ = 0;
+    sel_ = Mask8(); hasSel_ = false; sampleValid_ = false; seg_.invalidate();
+    hist_.clear(); histPos_ = 0; histBytes_ = 0;
+    previewOn_ = false; adjType_ = -1; tool_ = Tool::Idle;
+    bump();
 }
 
 void Engine::surfaceChanged(int w, int h) { screenW_ = std::max(1, w); screenH_ = std::max(1, h); }
@@ -226,7 +235,7 @@ void Engine::destroyDoc() {
 }
 
 void Engine::allocDocTextures() {
-    bool hf = halfFloatRT_ && (int64_t)W_ * H_ <= 16'000'000;
+    bool hf = halfFloatRT_ && (int64_t)W_ * H_ <= 8'400'000;   // acima disso, RGBA8 para poupar memória de vídeo
     int levels = 1;
     for (int m = std::max(W_, H_); m > 1; m >>= 1) levels++;
     for (GLuint* t : {&compA_, &compB_}) {
