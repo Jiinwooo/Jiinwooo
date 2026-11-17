@@ -1,0 +1,8 @@
+# NUNCA versionar segredos nem o APK (ele embute a chave da equipe)
+*.p12
+*.pk8
+*.jks
+*.keystore
+*.x509.pem
+*.apk
+*.idsig
