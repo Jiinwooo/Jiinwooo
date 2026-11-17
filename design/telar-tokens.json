@@ -1,0 +1,58 @@
+{
+  "name": "Telar — Tema Grafite",
+  "version": "0.1.0",
+  "license": "MIT OR Apache-2.0",
+  "note": "Tokens originais (Trilho B). Unidades em dp/sp (Android).",
+  "color": {
+    "dark": {
+      "canvasSurround": "#121316",
+      "surface": "#1A1C20",
+      "surfaceRaised": "#23262B",
+      "control": "#2E3238",
+      "line": "#3A3F46",
+      "textPrimary": "#E9EAEC",
+      "textSecondary": "#9BA1A9",
+      "accent": "#F5B53F",
+      "accentText": "#F5B53F",
+      "onAccent": "#1C1406",
+      "quickMask": "#E5484D",
+      "success": "#3DD68C",
+      "warning": "#FF8A3D"
+    },
+    "light": {
+      "canvasSurround": "#C9CCD1",
+      "surface": "#F6F7F8",
+      "surfaceRaised": "#FFFFFF",
+      "control": "#ECEEF1",
+      "line": "#D3D6DB",
+      "textPrimary": "#16181C",
+      "textSecondary": "#5C636D",
+      "accent": "#F5B53F",
+      "accentText": "#8F6205",
+      "onAccent": "#1C1406",
+      "quickMask": "#D83A40",
+      "success": "#1F9D62",
+      "warning": "#C2570F"
+    },
+    "quickMaskAlpha": 0.5,
+    "disabledAlpha": 0.38
+  },
+  "font": {
+    "display": { "family": "Sora", "weights": [600, 700], "license": "OFL-1.1" },
+    "ui": { "family": "Inter", "weights": [400, 500, 600], "license": "OFL-1.1" },
+    "mono": { "family": "JetBrains Mono", "weights": [400, 500], "license": "OFL-1.1", "features": ["tnum"] }
+  },
+  "type": {
+    "display": { "font": "display", "size": 28, "line": 34, "weight": 600 },
+    "title":   { "font": "display", "size": 20, "line": 26, "weight": 600 },
+    "body":    { "font": "ui", "size": 14, "line": 20, "weight": 400 },
+    "label":   { "font": "ui", "size": 12, "line": 16, "weight": 500 },
+    "value":   { "font": "mono", "size": 12, "line": 16, "weight": 500 },
+    "caption": { "font": "ui", "size": 11, "line": 14, "weight": 400 }
+  },
+  "space": { "grid": 4, "xs": 4, "sm": 8, "md": 12, "lg": 16, "xl": 24 },
+  "radius": { "control": 8, "button": 10, "card": 12, "sheet": 28, "pill": 999 },
+  "size": { "touchTarget": 48, "toolRail": 48, "icon": 20, "iconStroke": 1.7 },
+  "motion": { "sheet": 200, "tab": 120, "dialog": 160, "easing": "cubic-bezier(0.2, 0, 0, 1)" },
+  "blendModes": ["normal","multiply","screen","overlay","soft-light","hard-light","color-burn","color-dodge","linear-burn","linear-dodge","vivid-light","linear-light","pin-light","hard-mix","darken","lighten","darker-color","lighter-color","difference","exclusion","subtract","divide","hue","saturation","color","luminosity"]
+}
