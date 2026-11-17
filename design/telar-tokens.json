@@ -1,58 +1,214 @@
 {
   "name": "Telar — Tema Grafite",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT OR Apache-2.0",
-  "note": "Tokens originais (Trilho B). Unidades em dp/sp (Android).",
+  "note": "Tokens originais (Trilho B). Segue convenções de layout do Photoshop (ferramentas à esquerda, painéis à direita, barra de opções), com arte própria. Unidades dp/sp.",
   "color": {
-    "dark": {
-      "canvasSurround": "#121316",
-      "surface": "#1A1C20",
-      "surfaceRaised": "#23262B",
-      "control": "#2E3238",
-      "line": "#3A3F46",
-      "textPrimary": "#E9EAEC",
-      "textSecondary": "#9BA1A9",
-      "accent": "#F5B53F",
-      "accentText": "#F5B53F",
-      "onAccent": "#1C1406",
-      "quickMask": "#E5484D",
-      "success": "#3DD68C",
-      "warning": "#FF8A3D"
+    "interfaceLevels": {
+      "1": {
+        "pasteboard": "#151515",
+        "bar": "#1F1F1F",
+        "panel": "#262626",
+        "field": "#333333",
+        "hover": "#3B3B3B",
+        "line": "#3A3A3A",
+        "textPrimary": "#E6E6E6",
+        "textSecondary": "#A3A3A3",
+        "accent": "#3B8EEA",
+        "onAccent": "#FFFFFF"
+      },
+      "2": {
+        "pasteboard": "#1E1E1E",
+        "bar": "#2A2A2A",
+        "panel": "#323232",
+        "field": "#3E3E3E",
+        "hover": "#474747",
+        "line": "#474747",
+        "textPrimary": "#E6E6E6",
+        "textSecondary": "#ABABAB",
+        "accent": "#3B8EEA",
+        "onAccent": "#FFFFFF"
+      },
+      "3": {
+        "pasteboard": "#3A3A3A",
+        "bar": "#474747",
+        "panel": "#535353",
+        "field": "#626262",
+        "hover": "#6B6B6B",
+        "line": "#6A6A6A",
+        "textPrimary": "#F2F2F2",
+        "textSecondary": "#CFCFCF",
+        "accent": "#3B8EEA",
+        "onAccent": "#FFFFFF"
+      },
+      "4": {
+        "pasteboard": "#9C9C9C",
+        "bar": "#C6C6C6",
+        "panel": "#D8D8D8",
+        "field": "#E8E8E8",
+        "hover": "#F0F0F0",
+        "line": "#B3B3B3",
+        "textPrimary": "#1C1C1C",
+        "textSecondary": "#4A4A4A",
+        "accent": "#1473E6",
+        "onAccent": "#FFFFFF"
+      }
     },
-    "light": {
-      "canvasSurround": "#C9CCD1",
-      "surface": "#F6F7F8",
-      "surfaceRaised": "#FFFFFF",
-      "control": "#ECEEF1",
-      "line": "#D3D6DB",
-      "textPrimary": "#16181C",
-      "textSecondary": "#5C636D",
-      "accent": "#F5B53F",
-      "accentText": "#8F6205",
-      "onAccent": "#1C1406",
-      "quickMask": "#D83A40",
-      "success": "#1F9D62",
-      "warning": "#C2570F"
-    },
+    "defaultLevel": "2",
+    "selectionFill": "rgba(59,142,234,0.28)",
+    "quickMask": "#E5484D",
     "quickMaskAlpha": 0.5,
+    "success": "#2D9D78",
+    "warning": "#E68619",
     "disabledAlpha": 0.38
   },
   "font": {
-    "display": { "family": "Sora", "weights": [600, 700], "license": "OFL-1.1" },
-    "ui": { "family": "Inter", "weights": [400, 500, 600], "license": "OFL-1.1" },
-    "mono": { "family": "JetBrains Mono", "weights": [400, 500], "license": "OFL-1.1", "features": ["tnum"] }
+    "display": {
+      "family": "Sora",
+      "weights": [
+        600,
+        700
+      ],
+      "license": "OFL-1.1"
+    },
+    "ui": {
+      "family": "Inter",
+      "weights": [
+        400,
+        500,
+        600
+      ],
+      "license": "OFL-1.1"
+    },
+    "mono": {
+      "family": "JetBrains Mono",
+      "weights": [
+        400,
+        500
+      ],
+      "license": "OFL-1.1",
+      "features": [
+        "tnum"
+      ]
+    }
   },
   "type": {
-    "display": { "font": "display", "size": 28, "line": 34, "weight": 600 },
-    "title":   { "font": "display", "size": 20, "line": 26, "weight": 600 },
-    "body":    { "font": "ui", "size": 14, "line": 20, "weight": 400 },
-    "label":   { "font": "ui", "size": 12, "line": 16, "weight": 500 },
-    "value":   { "font": "mono", "size": 12, "line": 16, "weight": 500 },
-    "caption": { "font": "ui", "size": 11, "line": 14, "weight": 400 }
+    "title": {
+      "font": "display",
+      "size": 20,
+      "line": 26,
+      "weight": 600
+    },
+    "panelTitle": {
+      "font": "ui",
+      "size": 12,
+      "line": 16,
+      "weight": 600
+    },
+    "ui": {
+      "font": "ui",
+      "size": 12,
+      "line": 16,
+      "weight": 400
+    },
+    "option": {
+      "font": "ui",
+      "size": 11.5,
+      "line": 14,
+      "weight": 400
+    },
+    "value": {
+      "font": "mono",
+      "size": 11,
+      "line": 14,
+      "weight": 400
+    }
   },
-  "space": { "grid": 4, "xs": 4, "sm": 8, "md": 12, "lg": 16, "xl": 24 },
-  "radius": { "control": 8, "button": 10, "card": 12, "sheet": 28, "pill": 999 },
-  "size": { "touchTarget": 48, "toolRail": 48, "icon": 20, "iconStroke": 1.7 },
-  "motion": { "sheet": 200, "tab": 120, "dialog": 160, "easing": "cubic-bezier(0.2, 0, 0, 1)" },
-  "blendModes": ["normal","multiply","screen","overlay","soft-light","hard-light","color-burn","color-dodge","linear-burn","linear-dodge","vivid-light","linear-light","pin-light","hard-mix","darken","lighten","darker-color","lighter-color","difference","exclusion","subtract","divide","hue","saturation","color","luminosity"]
+  "space": {
+    "grid": 4,
+    "xs": 4,
+    "sm": 8,
+    "md": 12,
+    "lg": 16,
+    "xl": 24
+  },
+  "radius": {
+    "control": 4,
+    "button": 5,
+    "panel": 0,
+    "flyout": 6,
+    "pill": 999
+  },
+  "size": {
+    "toolButton": 32,
+    "touchTarget": 44,
+    "optionsBar": 40,
+    "docTab": 24,
+    "statusBar": 20,
+    "panelTab": 30,
+    "panelWidthLandscape": 270,
+    "panelWidthPortraitPct": 86,
+    "icon": 18,
+    "iconStroke": 1.6
+  },
+  "motion": {
+    "drawer": 200,
+    "tab": 120,
+    "easing": "cubic-bezier(0.2, 0, 0, 1)"
+  },
+  "blendModes": [
+    "normal",
+    "multiply",
+    "screen",
+    "overlay",
+    "soft-light",
+    "hard-light",
+    "color-burn",
+    "color-dodge",
+    "linear-burn",
+    "linear-dodge",
+    "vivid-light",
+    "linear-light",
+    "pin-light",
+    "hard-mix",
+    "darken",
+    "lighten",
+    "darker-color",
+    "lighter-color",
+    "difference",
+    "exclusion",
+    "subtract",
+    "divide",
+    "hue",
+    "saturation",
+    "color",
+    "luminosity"
+  ],
+  "layout": {
+    "landscape": {
+      "toolbarColumns": 2,
+      "panels": "right drawer, pull from edge, pinnable"
+    },
+    "portrait": {
+      "toolbarColumns": 1,
+      "panels": "right drawer overlay"
+    }
+  },
+  "tools": [
+    "move V",
+    "marquee M",
+    "lasso L",
+    "object/quick selection W",
+    "crop C",
+    "eyedropper I",
+    "healing J",
+    "brush B",
+    "clone stamp S",
+    "eraser E",
+    "gradient G",
+    "pen P",
+    "type T",
+    "shape U",
+    "hand H"
+  ]
 }
